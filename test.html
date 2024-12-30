@@ -19,12 +19,12 @@
       <li><a onclick="showSection('search_pawn')">រុករកការបញ្ចាំ</a></li>
     </ul>
   </nav>
-
+  
+  
   <!-- Content Area -->
   <div class="content">
 
-
-    <!-- ================================= add customer===================================== -->
+    <!-- ================================= add product===================================== -->
     <section id="add_product" >
       <!-- <h2>Product Information</h2> -->
       <div class="container">
@@ -55,23 +55,21 @@
                     <input type="number" id="productAmount">
                   </div>
                   
-                
               </div>
           
               <!-- Right Side -->
               <div class="right-side">
                 <div class="button-group">
-                  <button type="submit">កត់ត្រាទុក</button>
-                  <button type="reset">រុករក</button>
-                  <button type="button">លប់ចោល</button>
+                  <button type="record">កត់ត្រាទុក</button>
+                  <button type="search">រុករក</button>
+                  <button type="cancel">លប់ចោល</button>
                 </div>
-                
               </div>
             </div>
           </div>
 
         <div class="page right">
-          <h2 class="indivpro">លទ្ធផលពីការរុករក</h2>
+          <h2 class="h2fixed">លទ្ធផលពីការរុករក</h2>
           <table>
             <thead>
               <tr>
@@ -103,18 +101,16 @@
             </tbody>
           </table>
           <div class="button-group2">
-            <button type="button">យល់ព្រម</button>
-            <button type="button">លប់ចោល</button>
+            <button type="okay">យល់ព្រម</button>
+            <button type="cancel">លប់ចោល</button>
           </div>
         </div>
 
       </div>
     </section>
 
-
-
-
-    <!-- Pawn Information Section -->
+    <!-- ================================= add customer===================================== -->
+    <!-- =================================     None    ===================================== -->
     <section id="add_customer" >
       <h1>បន្ថែមផលិតផល</h1>
       <div class="container">
@@ -132,94 +128,90 @@
       </div>
     </section>
 
-
-
-
-
-
-    <!-- Order Management Section -->
+     <!-- ================================= Order Management Section ===================================== -->
     <section id="buy_sell" >
         <h1>កត់ត្រាការទិញ &លក់</h1>
         <div class="container">
           
   
           <div class="page left1">
-            <h2 class="indivpro">ព័ត៌មានអតិថិជន</h2>
+            <h2 class="h2fixed">ព័ត៌មានអតិថិជន</h2>
 
             <div class="form-group">
-              <label for="productID">លេខសំគាល់:</label>
-              <input type="text" id="productID" value="Auto Number" readonly>
+              <label for="customerID">លេខសំគាល់:</label>
+              <input type="text" id="customerID" value="" readonly>
             </div>
             
             <div class="form-group">
-              <label for="productName">ឈ្មោះ:</label>
-              <input type="text" id="productName">
+              <label for="customerName">ឈ្មោះ:</label>
+              <input type="text" id="customerName">
             </div>
             
             <div class="form-group">
-              <label for="productPrice">លេខទូរសព្ទ:</label>
-              <input type="number" id="productPrice">
+              <label for="phone">លេខទូរសព្ទ:</label>
+              <input type="number" id="telephone">
             </div>
             
             <div class="form-group">
-              <label for="productAmount">អាសយដ្ឋាន:</label>
-              <input type="number" id="productAmount">
+              <label for="adress">អាសយដ្ឋាន:</label>
+              <input type="text" id="adress">
             </div>
           </div>
   
           <div class="page right1">
-            <h2 class="indivpro">ព័ត៌មានផលិតផល</h2>
+            <h2 class="h2fixed">ព័ត៌មានផលិតផល</h2>
             <!-- Form Inputs -->
 
-    <div class="form-row">
-      <div class="form-group">
-        <label for="orderID">លេខវិក្កយបត្រ (OrderID):</label>
-        <input type="text" id="orderID" value="Auto Number" readonly>
-      </div>
-      <div class="form-group">
-        <label for="orderDate">ថ្ងៃបញ្ជាទិញ (Orderdate):</label>
-        <input type="text" id="orderDate" value="Today Function" readonly>
-      </div>
-    </div>
-
-    <!-- Button Row -->
-    <div class="button-group2">
-      <button type="add_product">បន្ថែមផលិតផល </button>
-      <button type="delete_product">លប់ចោលផលិតផល </button>
-      <!-- <button type="button">Cancel</button> -->
-    </div>
-
-    <!-- Table -->
-    <table>
-      <thead>
-        <tr>
-          <th>លេខសំគាល់</th>
-          <th>ឈ្មោះ</th>
-          <th>ទំងន់ (Weight)</th>
-          <th>ចំនួន (Order Amount)</th>
-          <th>តំលៃលក់ (Selling Price)</th>
-          <th>ឈ្នួល(Labor Price)</th>
-          <th>តំលៃទិញចូលវិញ(Buying Price)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>P001</td>
-          <td>A</td>
-          <td>100</td>
-          <td>10</td>
-          <td>90</td> 
-          <td>90</td> 
-          <td>90</td> 
-        </tr>
-        <tr>
-          <td colspan="7">&nbsp;</td> <!-- Empty Row -->
-        </tr>
-        <tr>
-          <td colspan="7">&nbsp;</td> <!-- Empty Row -->
-        </tr>
-      </tbody>
-    </table>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="orderID">លេខវិក្កយបត្រ:</label>
+                <input type="text" id="orderID" value="" readonly>
+              </div>
+            
+              <div class="form-group">
+                <label for="orderDate">ថ្ងៃបញ្ជាទិញ:</label>
+                <input type="date" id="orderDate" value="" readonly>
+              </div>
+            </div>
+          
+            <!-- Button Row -->
+            <div class="button-group-long">
+              <button type="add_product">បន្ថែមផលិតផល </button>
+              <button type="delete_product">លប់ចោលផលិតផល </button>
+              <!-- <button type="button">Cancel</button> -->
+            </div>
+          
+            <!-- Table -->
+            <table>
+              <thead>
+                <tr>
+                  <th>លេខសំគាល់</th>
+                  <th>ឈ្មោះ</th>
+                  <th>ទំងន់</th>
+                  <th>ចំនួន</th>
+                  <th>តំលៃលក់</th>
+                  <th>ឈ្នួល</th>
+                  <th>តំលៃទិញចូលវិញ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P001</td>
+                  <td>A</td>
+                  <td>100</td>
+                  <td>10</td>
+                  <td>90</td> 
+                  <td>90</td> 
+                  <td>90</td> 
+                </tr>
+                <tr>
+                  <td colspan="7">&nbsp;</td> <!-- Empty Row -->
+                </tr>
+                <tr>
+                  <td colspan="7">&nbsp;</td> <!-- Empty Row -->
+                </tr>
+              </tbody>
+            </table>
 
     <!-- Summary -->
     <div class="form-row">
@@ -228,7 +220,7 @@
         <input type="text" id="totalAmount" value="110" readonly>
       </div>
       <div class="summary-group">
-        <label for="bookPay">កក់/បង់សរុប(Order_Deposit):</label>
+        <label for="bookPay">កក់/បង់សរុប:</label>
         <input type="text" id="bookPay" value="50" readonly>
       </div>
     </div>
@@ -237,46 +229,41 @@
     <div class="button-group2">
       <!-- <button type="submit">Submit</button> -->
       <button type="record">កត់ត្រាទុក</button>
-      <button type="record">បោះពុម្ពវិក្កយបត្រ</button>
-      <button type="button">លប់ចោល</button>
+      <button type="print">បោះពុម្ពវិក្កយបត្រ</button>
+      <button type="cancel">លប់ចោល</button>
     </div>
           </div>
-  
         </div>
+    
     </section>
 
-
-
-
-
-
-    <!-- Customer Details Section -->
+    <!-- ================================= Customer Details Section ===================================== -->
     <section id="record_sell_buy" >
       <!-- <h1>ទិញ &លក់: រុករកអតិថិជន</h1> -->
       <div class="container">
 
         <div class="page left">
-          <h2 class="indivpro">ទិញ &លក់: រុករកអតិថិជន</h2>
+          <h2 class="h2fixed">ទិញ &លក់: រុករកអតិថិជន</h2>
           <div class="form-row">
             <div class="form-group">
-              <label for="orderID">លេខសំគាល់អតិថិជន:</label>
-              <input type="text" id="orderID" value="" readonly>
+              <label for="customerID">លេខសំគាល់អតិថិជន:</label>
+              <input type="text" id="customerID" value="" readonly>
             </div>
 
             <div class="form-group">
-              <label for="orderDate">ឈ្មោះ:</label>
-              <input type="text" id="orderDate" value="" readonly>
+              <label for="customerName">ឈ្មោះ:</label>
+              <input type="text" id="customerName" value="" readonly>
             </div>
 
             <div class="form-group">
-              <label for="orderDate">លេខទូរសព្ទ:</label>
-              <input type="text" id="orderDate" value="" readonly>
+              <label for="phone">លេខទូរសព្ទ:</label>
+              <input type="text" id="telephone" value="" readonly>
             </div>
           </div>
 
           <!-- Table -->
            <div>
-            <h3 class="indivpro">ព័ត៌មានផលិតផលដែលអតិថិជនបានទិញនិងលក់</h3>
+            <h3 class="h2fixedv2">ព័ត៌មានផលិតផលដែលអតិថិជនបានទិញនិងលក់</h3>
             
            
           <table>
@@ -284,12 +271,12 @@
               <tr>
                 <th>លេខសំគាល់</th>
                 <th>ឈ្មោះ</th>
-                <th>ទំងន់(Weight)</th>
-                <th>ចំនួន(OrderAmount)</th>
-                <th>តំលៃលក់(Selling Price)</th>
-                <th>ឈ្នួល(Labor Price)</th>
-                <th>ប្រាក់កក់(Order_Deposit)</th>
-                <th>តំលៃទិញចូលវិញ(Buying Price)</th>
+                <th>ទំងន់</th>
+                <th>ចំនួន</th>
+                <th>តំលៃលក់</th>
+                <th>ឈ្នួល</th>
+                <th>ប្រាក់កក់</th>
+                <th>តំលៃទិញចូលវិញ</th>
               </tr>
             </thead>
             <tbody>
@@ -314,23 +301,20 @@
           <div class="button-group2">
             <!-- <button type="submit">Submit</button> -->
             <button type="record">កត់ត្រាទុក</button>
-            <button type="button">លប់ចោល</button>
+            <button type="cancel">លប់ចោល</button>
           </div>
         </div>
         </div>
       </div>
     </section>
 
-
-
-
-
+    <!-- ================================= Record Pawn Section ===================================== -->
     <section id="record_pawn" >
         <h1>កត់ត្រាការបញ្ចាំ</h1>
         <div class="container">
   
           <div class="page left1">
-            <h2 class="indivpro">ព័ត៌មានអតិថិជន</h2>
+            <h2 class="h2fixed">ព័ត៌មានអតិថិជន</h2>
 
             <div class="form-group">
               <label for="customerID">លេខសំគាល់:</label>
@@ -354,44 +338,47 @@
           </div>
   
           <div class="page right1">
-            <h2 class="indivpro">ព័ត៌មានផលិតផល</h2>
+            <h2 class="h2fixed">ព័ត៌មានផលិតផល</h2>
             <div class="form-container">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="orderpawnID">លេខវិក្កយបត្រ(Order Pawn ID):</label>
-                  <input type="text" id="orderpawnID" value="Auto Number" readonly>
+                  <label for="orderpawnID">លេខវិក្កយបត្រ:</label>
+                  <input type="text" id="orderpawnID" value="" readonly>
                 </div>
+
                 <div class="form-group">
                   <label for="date">កាលបរិច្ឆេទ:</label>
-                  <input type="text" id="date" value="Today Function" readonly>
+                  <input type="text" id="date" value="" readonly>
                 </div>
               </div>
-          
+
               <div class="form-row">
                 <div class="form-group">
-                  <label for="checkin">ថ្ងៃបញ្ចាំ(CheckInDate):</label>
-                  <input type="text" id="checkin" value="Today Function" readonly>
+                  <label for="checkin">ថ្ងៃបញ្ចាំ:</label>
+                  <input type="text" id="checkin" value="" readonly>
                 </div>
+
                 <div class="form-group">
-                  <label for="checkout">ថ្ងៃផុតកំណត់(CheckOutDate):</label>
-                  <input type="text" id="checkout" value="Today Function" readonly>
+                  <label for="checkout">ថ្ងៃផុតកំណត់:</label>
+                  <input type="text" id="checkout" value="" readonly>
                 </div>
               </div>
             </div>
-            <div class="button-group2">
-              <button type="submit">បន្ថែមផលិតផល</button>
-              <button type="record">លប់ចោលផលិតផល</button>
+            ~
+            <div class="button-group-long">
+              <button type="add">បន្ថែមផលិតផល</button>
+              <button type="cancel">លប់ចោលផលិតផល</button>
               <!-- <button type="button">Cancel</button> -->
             </div>
 
-            <table>
+            <table class="table1">
               <thead>
                 <tr>
-                  <th>លេខសំគាល់(ProdID)</th>
-                  <th>ឈ្មោះ(ProdName)</th>
-                  <th>ទំងន់(Pawn_Weight)</th>
-                  <th>តំលៃបញ្ចាំ(Unite Price)</th>
-                  <th>ចំនួន(Pawn_Amount)</th>
+                  <th>លេខសំគាល់</th>
+                  <th>ឈ្មោះ</th>
+                  <th>ទំងន់</th>
+                  <th>តំលៃបញ្ចាំ</th>
+                  <th>ចំនួន</th>
                   <!-- <th>Price Selling</th> -->
                 </tr>
               </thead>
@@ -415,19 +402,19 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label for="orderpawnID">សរុប:</label>
-                <input type="text" id="orderpawnID" value="Auto Number" readonly>
+                <label for="total">សរុប:</label>
+                <input type="text" id="total" value="Auto Number" readonly>
               </div>
               <div class="form-group">
-                <label for="date">កក់/បង់សរុប(Pawn_Deposit):</label>
-                <input type="text" id="date" value="Today Function" readonly>
+                <label for="book">កក់/បង់សរុប:</label>
+                <input type="text" id="book" value="Today Function" readonly>
               </div>
             </div>
 
             <div class="button-group2">
-              <button type="submit">កត់ត្រាទុក</button>
-              <button type="record">បោះពុម្ពវិក្កយបត្រ</button>
-              <button type="button">លប់ចោល</button>
+              <button type="record">កត់ត្រាទុក</button>
+              <button type="print">បោះពុម្ពវិក្កយបត្រ</button>
+              <button type="cancel">លប់ចោល</button>
             </div>
 
             </div>
@@ -435,35 +422,31 @@
 
       </section>
 
-      
 
-
-
-
-
+    <!-- ================================= Search Pawn Section ===================================== -->
       <section id="search_pawn" class="active">
         <h1>បន្ថែមផលិតផល</h1>
         <div class="container">
   
           <div class="page left">
-            <h2 class="indivpro">ការរុករកព័ត៌មានអតិថិជនបញ្ចាំ</h2>
+            <h2 class="h2fixed">ការរុករកព័ត៌មានអតិថិជនបញ្ចាំ</h2>
             <div class="form-row">
               <div class="form-group">
                 <label for="customerID">លេខសំគាល់អតិថិជន:</label>
-                <input type="text" id="orderpawnID" value="Auto Number" readonly>
+                <input type="text" id="orderpawnID" value="" readonly>
               </div>
 
               <div class="form-group">
                 <label for="customerName">ឈ្មោះ:</label>
-                <input type="text" id="date" value="Today Function" readonly>
+                <input type="text" id="date" value="" readonly>
               </div>
 
               <div class="form-group">
-                <label for="date">លេខទូរសព្ទ:</label>
-                <input type="text" id="date" value="Today Function" readonly>
+                <label for="phone">លេខទូរសព្ទ:</label>
+                <input type="text" id="telephone" value="" readonly>
               </div>
             </div>
-            <h2 class="indivpro">ព័ត៌មានផលិតផល</h2>
+            <h2 class="h2fixed">ព័ត៌មានផលិតផល</h2>
             <table>
               <thead>
                 <tr>
@@ -496,13 +479,9 @@
             <div class="button-group2">
               <!-- <button type="submit">Record</button> -->
               <button type="record">កត់ត្រាទុក</button>
-              <button type="button">លប់ចោល</button>
+              <button type="cancel">លប់ចោល</button>
             </div>
-
           </div>
-
-  
-  
         </div>
       </section>
 
