@@ -20,3 +20,7 @@ function showSection(sectionId) {
     activeSection.style.display = 'block';
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  flatpickr("#orderDate", {});
+});
